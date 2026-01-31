@@ -6,7 +6,7 @@ def dessine_grille(tab):
 
     prend en argument tab qui représente le grille 3 * 3
     """
-    os.system('cls')  
+    os.system('cls' if os.name == 'nt' else 'clear')
     print("   1   2   3")  
     for i in range(3):
         ligne = f"{i+1} "  
